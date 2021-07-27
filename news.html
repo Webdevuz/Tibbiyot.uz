@@ -1,0 +1,656 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Andijon  viloyati Tibbiy-ijtimoiy xizmatlarni rivojlantrish boshqarmasi </title>
+    <meta name="robots" content="index" />
+    <meta name="description" content="Andijon  viloyati Tibbiy-ijtimoiy xizmatlarni rivojlantrish boshqarmasi,andijon tibbiyot,
+        protez buyumlarga ariza,sihatgixlarga ariza topshirish">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="/css/plazaicon.css">
+    <link rel="stylesheet" href="/css/themify-icons.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/select2.min.css">
+
+    <!-- Helper CSS -->
+    <link rel="stylesheet" href="/css/helper.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+   <script src="/js/jquery-3.3.1.min.js"></script>
+    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+    <!-- <link rel="stylesheet" href="assets/css/plugins-min/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css"> -->
+
+<!--Shop End-->
+
+
+
+
+<script>
+    // function ShowForm(){
+    //     var filter = document.getElementById('filter');
+    //     var tab = document.getElementById('myTabContent');
+    //     var order = document.getElementById('order');
+
+    //     filter.style = " display:none;";
+    //     tab.className = "show";
+    //     order.style = "  opacity: 1;transition: opacity 0.4s ease-out, display 0.4s step-start; display:block;";
+    // }
+
+    $( document ).ready(function() {
+  $('.trigger').on('click', function() {
+     $('.modal-wrapper').toggleClass('open');
+    $('.page-wrapper').toggleClass('blur-it');
+     return false;
+  });
+});
+
+const screenWidth = window.screen.width
+const screenHeight = window.screen.height
+
+$(document).ready(function(){
+    
+
+if(screenWidth < 580){
+    var scr = screenWidth - 10
+
+    $('#mod').css({"width": String(scr)});
+}
+})
+</script>
+
+<style>
+
+
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  background: url(https://goo.gl/OeVhun) center no-repeat;
+  background-size: cover;
+}
+
+.blur-it {
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+#model_btn.btn {
+  width: 200px;
+  padding: 18px 0;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0;
+  background: #e2525c;
+}
+
+.page-banner {
+    width: 94%;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 1px rgb(0 0 0 / 30%);
+  padding-top: 25px;
+  padding-bottom: 5px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background: rgba(146, 153, 153, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  overflow: auto;
+  z-index:999;
+}
+
+.modal-wrapper.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  width: 900px;
+  height: 700px;
+  display: block;
+  margin: 50% 0 0 -300px;
+  position: relative;
+  top: 25%; 
+  left: 50%;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+/* margin:50% 7px 0px -150px; */
+
+.modal-wrapper.open .modal {
+  margin-top: -200px;
+  opacity: 1;
+}
+
+.head { 
+  width: 100%;
+  height: 52px;
+  padding: 5px 10px;
+  overflow: hidden;
+  background: #e2525c;
+}
+
+.btn-close {
+  font-size: 28px;
+  display: block;
+  float: right;
+  color: #fff;
+}
+
+.content {
+  padding: 2%;
+}
+
+
+
+
+@media screen and (max-width: 578px) {
+
+.modal {
+    /* width: 350px; */
+height: 860px;
+display: block;
+margin: 50% 0px 5px 0px;
+position: relative;
+top: 35%; 
+left: 1%;
+right: 1%;
+background: #fff;
+opacity: 0;
+-webkit-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+overflow: hidden;
+scroll-behavior: auto;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <!--Header Section Start-->
+        <div class="header-section d-none d-lg-block">
+            <div class="main-header">
+                <div class="container position-relative">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2">
+                            <div class="header-logo">
+                                <a href="/">
+                                <img src="/images/logotip.svg" class="logo"  alt=""></a>
+                            </div>
+                        </div>
+                        <style>
+                            .logo{
+                                display: flex;
+                                position: absolute;
+                                top: -50%;
+                                /* margin: 0px 0px -15px 0px; */
+                                width: 100px;
+                                height: auto;
+                                z-index: 1;
+                            }
+                        </style>
+                        <div class="col-lg-7 position-static">
+                            <div class="site-main-nav">
+                                <nav class="site-nav">
+                                    <ul>
+                                        <li><a href="/index.html">Bosh sahifa</a></li>
+                                        <li>
+                                            <a href="/sanatory.html">Sihatgoxlar</a>
+                                        </li>
+                                        <li>
+                                            <a href="/about.html">Biz haqimizda</a>
+
+
+                                        </li>
+                                     
+                                        <li>
+                                            <a href="/news.html">Yangiliklar</a>
+                                        
+                                        </li>
+                                        <li><a href="/contact.html">Aloqa</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="header-meta-info">
+                                <div class="header-search">
+                                 
+                                </div>
+                                <div class="header-account">
+                                    <div class="header-account-list dropdown top-link">
+                                        <!-- <a href="#" role="button" data-toggle="dropdown"><i class="icon-users"></i></a> -->
+
+                                        <ul class="dropdown-menu ">
+                                            <li><a href="#">Delivery</a></li>
+                                            <li><a href="#">Legal Notice</a></li>
+                                            <li><a href="#">Secure payment</a></li>
+                                            <li><a href="#">Sitemap</a></li>
+                                            <li><a href="#">About us</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-account-list dropdown mini-cart">
+                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Header Section End-->
+
+
+        <!--Header Mobile Start-->
+        <div class="header-mobile d-lg-none">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <div class="header-logo">
+                            <a href="/"><img src="/images/logotip.svg" width="50" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="header-meta-info">
+                            <div class="header-account">
+                                <div class="header-account-list dropdown top-link">
+                                    <!-- <a href="#" role="button" data-toggle="dropdown"><i class="icon-users"></i></a> -->
+
+                                    <ul class="dropdown-menu ">
+                                        <li><a href="#">Delivery</a></li>
+                                        <li><a href="#">Legal Notice</a></li>
+                                        <li><a href="#">Secure payment</a></li>
+                                        <li><a href="#">Sitemap</a></li>
+                                        <li><a href="#">About us</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-account-list mini-cart">
+                                
+                                </div>
+                                <div class="header-account-list mobile-menu-trigger">
+                                    <button id="menu-trigger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Header Mobile End-->
+
+        <!--Header Mobile Menu Start-->
+        <div class="header-mobile-menu d-lg-none">
+
+            <a href="javascript:void(0)" class="mobile-menu-close">
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="header-meta-info">
+                <div class="header-search">
+    
+                </div>
+            </div>
+
+            <div class="site-main-nav">
+                <nav class="site-nav">
+                    <ul class="navbar-mobile-wrapper">
+                        <li><a href="/index.html">Bosh sahifa</a></li>
+                        <li>
+                            <a href="/about.html">Biz haqimizda </a>
+
+                           
+                        </li>
+                        <li>
+                            <a href="/category.html">Protez-Ortopediya</a>
+
+                     
+                        </li>
+                             <li><a href="/sanatory.html">Sihatgoxlar</a></li>
+                        <li>
+                            <a href="/news.html">Yangiliklar </a>
+                         
+                        </li>
+                        <li><a href="/contact.html">Aloqa</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-social">
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                 
+                    <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!--Header Mobile Menu End-->
+
+        <div class="overlay"></div>
+        <!--Overlay-->
+
+
+
+
+
+     
+
+        <div class="overlay"></div>
+        <!--Overlay-->
+
+        <!--Page Banner Start-->
+        <div class="page-banner"  style="background-image:url(/images/banner-2.jpeg); height:200px;">
+            <div class="container">
+                <div class="page-banner-content text-center">
+                    <h2 class="title">Yangiliklar</h2>
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="/">Bosh sahifa</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Yangiliklar</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!--Page Banner End-->
+
+        <!--Blog Start-->
+        <div class="blog-page section-padding-7">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-blog">
+                            <div class="blog-image">
+                                <a href="/detail/akademik-yaxtoraqulov-nomidagi-riiaetm-bemorlarini-qabul-qilish-tartibi.html"><img src="/images/der.jpg" alt="" width="380" height="320"></a>
+                            </div>
+                            <div class="blog-content">
+                                <h4 class="title"><a href="detail/akademik-yaxtoraqulov-nomidagi-riiaetm-bemorlarini-qabul-qilish-tartibi.html">Akademik Ya.X.To‘raqulov nomidagi RIIAETM bemorlarini qabul qilish tartibi</a></h4>
+                                <div class="articles-date">
+                                    <p>Muallif <span> /</span><span>14-Iyul, 2021-yil</span></p>
+                                </div>
+                                <p>Akademik Ya.X.To‘raqulov nomidagi RIIAETM bemorlarini qabul qilish tartibi 1. Qabulga yozilish 998 (78) 113-60-00 raqami bo&#x27;yicha call-markaz orqali qabul qilinishidan kamida 1 kun oldin amalga oshiriladi. Favqulodda holatlarda poliklinikaning 1-qavatidagi ro&#x27;yxatxonada amalga oshiriladigan tezkor ro&#x27;yxatga …</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-blog">
+                            <div class="blog-image">
+                                <a href="/detail/keng-kolamli-loyiha-ishga-tushirildi.html"><img src="/images/der2.jpg" alt="" width="380" height="320"></a>
+                            </div>
+                            <div class="blog-content">
+                                <h4 class="title"><a href="/detail/keng-kolamli-loyiha-ishga-tushirildi.html">Keng ko‘lamli loyiha ishga tushirildi</a></h4>
+                                <div class="articles-date">
+                                    <p>Muallif <span> /</span><span>14-Iyul, 2021-yil</span></p>
+                                </div>
+                                <p>O’zbekiston Respublikasi Prezidentining farmonlariga muvofiq. &quot;Sog‘lom turmush tarzini keng joriy etish va ommaviy sportni yanada rivojlantirish chora-tadbirlari to‘g‘risida &quot;va&quot; aholining sog‘lom ovqatlanishini ta’minlash bo‘yicha qo‘shimcha chora - tadbirlar to‘g‘risida &quot; RIIAETM shahar Sog‘liqni saqlash boshqarmasi …</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-blog">
+                            <div class="blog-image">
+                                <a href="/detail/farmatsevtika-sanoatidagi-korruptsiyaga-qarshi-kurash.html"><img src="/images/464721591807875.jpeg" alt="" width="380" height="320"></a>
+                            </div>
+                            <div class="blog-content">
+                                <h4 class="title"><a href="/detail/farmatsevtika-sanoatidagi-korruptsiyaga-qarshi-kurash.html">Farmatsevtika sanoatidagi korruptsiyaga qarshi kurash</a></h4>
+                                <div class="articles-date">
+                                    <p>Muallif <span> /</span><span>14-Iyul, 2021-yil</span></p>
+                                </div>
+                                <p>Korrupsiya - shaxsning oʻz mansab yoki xizmat mavqyeidan shaxsiy manfaatlarini yoxud oʻzga shaxslarning manfaatlarini koʻzlab moddiy yoki nomoddiy naf olish maqsadida qonunga xilof ravishda foydalanishi, xuddi shuningdek bunday nafni qonunga xilof ravishda taqdim etish; Korrupsiyaga …</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+                <!--Pagination Start-->
+                <div class="page-pagination">
+                    <ul class="pagination justify-content-center">
+                        
+                        
+                            <li class="page-item"><a class="page-link prev disabled" >Oldingi</a></li>
+                            
+                        
+                        
+                        
+                            
+                            
+                            <li class="page-item"><a class="page-link active">1</a></li>
+                            
+                        
+                        
+                        <li class="page-item"><a class="page-link next disabled" >Keyingi</a></li>
+
+                        
+                    </ul>
+                </div>
+                <!--Pagination End-->
+
+
+            </div>
+        </div>
+        <!--Blog End-->
+
+
+
+
+    
+
+
+         <!--Footer Section Start-->
+        <div class="footer-area" style="margin-top:50px;">
+            <div class="container">
+                <div class="footer-widget-area section-padding-6">
+                    <div class="row justify-content-between">
+
+                        <!--Footer Widget Start-->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-widget">
+                                <a class="footer-logo" href="#"><img src="/images/logotip.svg" alt="no image"></a>
+                                <div class="footer-widget-text">
+                                    <p> Andijon  viloyati Tibbiy-ijtimoiy xizmatlarni rivojlantrish boshqarmasi</p>
+                                </div>
+                                <div class="widget-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--Footer Widget End-->
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="footer-widget">
+                                <h4 class="footer-widget-title"><a href="/category.html">Protez buyumlari</a></h4>
+
+                                <div class="footer-widget-menu">
+                                    <ul>
+                                    
+                                        <li><a href="/product/4.html">Toʼliq oyoq uchun apparat</a></li>
+                                      
+                                        <li><a href="/product/3.html">Qoʼltiq hassa</a></li>
+                                      
+                                        <li><a href="/product/2.html">Yelka oldi protezi</a></li>
+                                      
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="footer-widget">
+                                <h4 class="footer-widget-title"><a href="/sanatory.html">Sihatgoxlar ro'yxati</a></h4>
+
+                                <div class="footer-widget-menu">
+                                    <ul>
+                                  
+                                        <li><a href="/form/5.html">Tovoqsoy sihatgoxi</a></li>
+                                    
+                                        <li><a href="/form/4.html">Shaxand sihatgoxi</a></li>
+                                    
+                                        <li><a href="/form/3.html">Nurobod sixatgoxi</a></li>
+                                    
+                                        <li><a href="/form/2.html">Chortoqsoy sixatgohi</a></li>
+                                    
+                                        <li><a href="/form/1.html">Xonobod sixatgohi</a></li>
+                                    
+
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="footer-widget">
+                                <h4 class="footer-widget-title">Ma'lumot</h4>
+
+                                <div class="footer-widget-menu">
+                                    <ul>
+                                        <li><a href="/about.html">Tashkilot xaqida</a></li>
+                                        <li><a href="/contact.html">Aloqa</a></li>
+                                        <li><a href="/news.html">Yangiliklar</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer Section End-->
+
+        <!--Copyright Section Start-->
+        <div class="copyright-section">
+            <div class="container">
+                <div class="copyright-wrapper text-center d-lg-flex align-items-center justify-content-between">
+
+                    <!--Right Start-->
+                    <div class="copyright-content">
+                        <p>Copyright 2021 &copy; <a href="https://robocode.uz/">Robocode</a> . All Rights Reserved</p>
+                    </div>
+                    <!--Right End-->
+
+                    <!--Right Start-->
+                    <div class="copyright-payment">
+                        <img src="/images/payment.png" alt="">
+                    </div>
+                    <!--Right End-->
+
+                </div>
+            </div>
+        </div>
+        <!--Copyright Section End-->
+
+
+        <!--Back To Start-->
+        <a href="#" class="back-to-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!--Back To End-->
+
+    </div>
+ 
+
+    < <!-- Modernizer JS -->
+    <script src="/js/modernizr-3.6.0.min.js"></script>
+    <!-- jQuery JS -->
+ 
+    <!-- Bootstrap JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/jquery.countdown.min.js"></script>
+    <script src="/js/jquery.elevateZoom.min.js"></script>
+    <script src="/js/select2.min.js"></script>
+    <script src="/js/ajax-contact.js"></script>
+
+
+    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+    <!-- <script src="assets/js/plugins.min.js"></script> -->
+
+    <!-- Main JS -->
+    <script src="/js/main.js"></script>
+
+
+    <!-- Google Map js -->
+    
+    <script src="/js/map-script.js"></script>
+
+
+
+      
+</body>
+
+</html> 

@@ -1,0 +1,1025 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Andijon  viloyati Tibbiy-ijtimoiy xizmatlarni rivojlantrish boshqarmasi </title>
+    <meta name="robots" content="index" />
+    <meta name="description" content="Andijon  viloyati Tibbiy-ijtimoiy xizmatlarni rivojlantrish boshqarmasi,andijon tibbiyot,
+        protez buyumlarga ariza,sihatgixlarga ariza topshirish">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/static/assets/images/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+   <!-- Icon Font CSS -->
+   <link rel="stylesheet" href="/css/plazaicon.css">
+   <link rel="stylesheet" href="/css/themify-icons.css">
+   <link rel="stylesheet" href="/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+
+   <!-- Plugins CSS -->
+   <link rel="stylesheet" href="/css/animate.css">
+   <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="/css/select2.min.css">
+
+   <!-- Helper CSS -->
+   <link rel="stylesheet" href="/css/helper.css">
+
+   <!-- Main Style CSS -->
+   <link rel="stylesheet" href="/css/animate.css">
+   <link rel="stylesheet" href="/css/animate.min.css">
+   <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.3.1.min.js"></script>
+    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+    <!-- <link rel="stylesheet" href="assets/css/plugins-min/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css"> -->
+
+<!--Shop End-->
+
+
+
+
+<script>
+    // function ShowForm(){
+    //     var filter = document.getElementById('filter');
+    //     var tab = document.getElementById('myTabContent');
+    //     var order = document.getElementById('order');
+
+    //     filter.style = " display:none;";
+    //     tab.className = "show";
+    //     order.style = "  opacity: 1;transition: opacity 0.4s ease-out, display 0.4s step-start; display:block;";
+    // }
+
+    $( document ).ready(function() {
+  $('.trigger').on('click', function() {
+     $('.modal-wrapper').toggleClass('open');
+    $('.page-wrapper').toggleClass('blur-it');
+     return false;
+  });
+});
+
+const screenWidth = window.screen.width
+const screenHeight = window.screen.height
+
+$(document).ready(function(){
+    
+
+if(screenWidth < 580){
+    var scr = screenWidth - 10
+
+    $('#mod').css({"width": String(scr)});
+}
+})
+</script>
+
+<style>
+
+
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  background: url(https://goo.gl/OeVhun) center no-repeat;
+  background-size: cover;
+}
+
+.blur-it {
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+#model_btn.btn {
+  width: 200px;
+  padding: 18px 0;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0;
+  background: #e2525c;
+}
+
+.page-banner {
+    width: 94%;
+    margin: 0 auto;
+    border-radius: 15px;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0 10px 1px rgb(0, 0, 0, 0.3);
+}
+
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background: rgba(146, 153, 153, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  overflow: auto;
+  z-index:999;
+}
+
+.modal-wrapper.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  width: 900px;
+  height: 700px;
+  display: block;
+  margin: 50% 0 0 -300px;
+  position: relative;
+  top: 25%; 
+  left: 50%;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+/* margin:50% 7px 0px -150px; */
+
+.modal-wrapper.open .modal {
+  margin-top: -200px;
+  opacity: 1;
+}
+
+.head { 
+  width: 100%;
+  height: 52px;
+  padding: 5px 10px;
+  overflow: hidden;
+  background: #e2525c;
+}
+
+.btn-close {
+  font-size: 28px;
+  display: block;
+  float: right;
+  color: #fff;
+}
+
+.content {
+  padding: 2%;
+}
+
+
+
+
+@media screen and (max-width: 578px) {
+
+.modal {
+    /* width: 350px; */
+height: 860px;
+display: block;
+margin: 50% 0px 5px 0px;
+position: relative;
+top: 35%; 
+left: 1%;
+right: 1%;
+background: #fff;
+opacity: 0;
+-webkit-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+overflow: hidden;
+scroll-behavior: auto;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <!--Header Section Start-->
+        <div class="header-section d-none d-lg-block">
+            <div class="main-header">
+                <div class="container position-relative">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2">
+                            <div class="header-logo">
+                                <a href="/">
+                                <img src="/images/logotip.svg" class="logo"  alt=""></a>
+                            </div>
+                        </div>
+                        <style>
+                            .logo{
+                                display: flex;
+                                position: absolute;
+                                top: -50%;
+                                /* margin: 0px 0px -15px 0px; */
+                                width: 100px;
+                                height: auto;
+                                z-index: 1;
+                            }
+                        </style>
+                        <div class="col-lg-7 position-static">
+                            <div class="site-main-nav">
+                                <nav class="site-nav">
+                                    <ul>
+                                        <li><a href="/index.html">Bosh sahifa</a></li>
+                                        <li>
+                                            <a href="/sanatory.html">Sihatgoxlar</a>
+                                        </li>
+                                        <li>
+                                            <a href="/about.html">Biz haqimizda</a>
+
+
+                                        </li>
+                                     
+                                        <li>
+                                            <a href="/news.html">Yangiliklar</a>
+                                        
+                                        </li>
+                                        <li><a href="/contact.html">Aloqa</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="header-meta-info">
+                                <div class="header-search">
+                                 
+                                </div>
+                                <div class="header-account">
+                                    <div class="header-account-list dropdown top-link">
+                                        <!-- <a href="#" role="button" data-toggle="dropdown"><i class="icon-users"></i></a> -->
+
+                                        <ul class="dropdown-menu ">
+                                            <li><a href="#">Delivery</a></li>
+                                            <li><a href="#">Legal Notice</a></li>
+                                            <li><a href="#">Secure payment</a></li>
+                                            <li><a href="#">Sitemap</a></li>
+                                            <li><a href="#">About us</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-account-list dropdown mini-cart">
+                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Header Section End-->
+
+
+        <!--Header Mobile Start-->
+        <div class="header-mobile d-lg-none">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <div class="header-logo">
+                            <a href="/index.html"><img src="/images/logotip.svg" width="50" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="header-meta-info">
+                            <div class="header-account">
+                                <div class="header-account-list dropdown top-link">
+                                    <!-- <a href="#" role="button" data-toggle="dropdown"><i class="icon-users"></i></a> -->
+
+                                    <ul class="dropdown-menu ">
+                                        <li><a href="#">Delivery</a></li>
+                                        <li><a href="#">Legal Notice</a></li>
+                                        <li><a href="#">Secure payment</a></li>
+                                        <li><a href="#">Sitemap</a></li>
+                                        <li><a href="#">About us</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-account-list mini-cart">
+                                
+                                </div>
+                                <div class="header-account-list mobile-menu-trigger">
+                                    <button id="menu-trigger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Header Mobile End-->
+
+        <!--Header Mobile Menu Start-->
+        <div class="header-mobile-menu d-lg-none">
+
+            <a href="javascript:void(0)" class="mobile-menu-close">
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="header-meta-info">
+                <div class="header-search">
+    
+                </div>
+            </div>
+
+            <div class="site-main-nav">
+                <nav class="site-nav">
+                    <ul class="navbar-mobile-wrapper">
+                        <li><a href="/index.html">Bosh sahifa</a></li>
+                        <li>
+                            <a href="/about.html">Biz haqimizda </a>
+
+                           
+                        </li>
+                        <li>
+                            <a href="/category.html">Protez-Ortopediya</a>
+
+                     
+                        </li>
+                             <li><a href="/sanatory.html">Sihatgoxlar</a></li>
+                        <li>
+                            <a href="/news.html">Yangiliklar </a>
+                         
+                        </li>
+                        <li><a href="/contact.html/">Aloqa</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-social">
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                 
+                    <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!--Header Mobile Menu End-->
+
+        <div class="overlay"></div>
+        <!--Overlay-->
+
+
+
+
+
+     
+
+ <!--Page Banner Start-->
+ <div class="page-banner"  style="background-image: url(/images/banner-2.jpeg); height: 200px;">
+    <div class="container">
+        <div class="page-banner-content text-center">
+            <h2 class="title">Sihatgoxlar</h2>
+            <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="/index.html">Bosh sahifa</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Sihatgoxlar</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<!--Page Banner End-->
+   <!--Shop Start-->
+   <div class="shop-page section-padding-6" style="margin-bottom: 100px;">
+    <div class="container">
+        <div class="row flex-row-reverse">
+            <div class="col-lg-12">
+
+                <!-- <div class="shop-banner">
+                    <a href="#"><img src="/static/assets/images/banner-1.jpg" alt=""></a>
+                </div> -->
+
+
+                <!--Shop Top Bar Start-->
+                <div class="shop-top-bar d-sm-flex align-items-center justify-content-between" id="filter">
+                    <div class="top-bar-btn">
+                        <ul class="nav" role="tablist">
+                            <!-- <li class="nav-item"><a class="nav-link grid" data-toggle="tab" href="#grid" role="tab"></a></li>
+                            <li class="nav-item"><a class="nav-link list active" data-toggle="tab" href="#list" role="tab"></a></li> -->
+                        </ul>
+                    </div>
+                    <div class="top-bar-sorter">
+                        <div class="sorter-wrapper d-flex align-items-center">
+
+                                <label>Viloyat bo'yicha saralash:</label>
+                          <form action="" method="post">
+                                <select class="sorter wide" onchange="SortObl(this.value)" name="SortBy" id="SortBy">
+                                    <option value="" selected>-- --- --</option>
+                                    <option value="all" >Barcha viloyatlar</option>
+                                    
+                                        <option value="Toshkent">Toshkent</option>
+                                    
+                                        <option value="Sirdaryo">Sirdaryo</option>
+                                    
+                                        <option value="Buxoro">Buxoro</option>
+                                    
+                                        <option value="Samarqand">Samarqand</option>
+                                    
+                                        <option value="Qashqadaryo">Qashqadaryo</option>
+                                    
+                                        <option value="Surxandaryo">Surxandaryo</option>
+                                    
+                                        <option value="Jizzax">Jizzax</option>
+                                    
+                                        <option value="Navoiy">Navoiy</option>
+                                    
+                                        <option value="Andijon">Andijon</option>
+                                    
+                                        <option value="Namangan">Namangan</option>
+                                    
+                                        <option value="Farg`ona">Farg`ona</option>
+                                    
+                                        <option value="Qoraqalpog&#x27;iston">Qoraqalpog&#x27;iston</option>
+                                    
+                                        <option value="Xorazm">Xorazm</option>
+                                    
+                                </select>
+                          <input type="hidden" name="csrfmiddlewaretoken" value="MBgIEs28cDATaaey5nkqoNgPYgq5tzS4tjq0Nx4oGoQacIb6KzEEDZHEEXnfdpxT">
+                              <input type="submit" id="ok" style="display: none">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="top-bar-page-amount">
+                        <p>5 ta sihatgox topildi</p>
+                    </div>
+                </div>
+                <!--Shop Top Bar End-->
+
+
+                <div class="tab-content" id="myTabContent" style=" opacity: 1;transition: opacity 0.4s ease-out, display 0.4s step-start;">
+                 
+
+
+                    <div class="tab-pane fade show active" id="list" role="tabpanel">
+                        
+                        <div class="single-product product-list">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="/images/2cb16d82cdce34d94940b08aa94517c9.jpg" alt="" height="232px">
+                                </a>
+
+                                <div class="action-links">
+                                    <ul>
+                                        <!-- <li><a href="javascript:void(0);" data-tooltip="tooltip" data-placement="left" title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-eye"></i></a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <!--<ul class="rating">-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--</ul>-->
+                                <h4 class="product-name"><a href="#">Tovoqsoy sihatgoxi</a></h4>
+                                <div class="price-box">
+                                    <!-- <span class="current-price">$79.00</span> -->
+                                </div>
+                                <p>Tovoqsoy – toshkentning go‘zal tabiatli, musaffo havoli, ekoturizm uchun qulay hududi. Bu yerda Siz hordiq chiqarish bilan birga betakror tabiat manzaralaridan zavq olasiz. Sihatgohda mijozlarga yuqori sifatli xizmat ko‘rsatish uchun barcha qulayliklar mavjud. Keng va yorug‘ xonalar eng so‘nggi zamonaviy tibbiyot uskunalari bilan ta&#x27;minlangan.</p>
+
+                                <ul class="action-links">
+                                    
+                                      
+                                 
+                                    <li><a href="/form/5.html" class="add-cart"  title="Ariza topshirish"> Ariza topshirish &nbsp; <i class="fa fa-arrow-right"></i> </a></li>
+                                    <!-- <li><a href="javascript:void(0);" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist" class="wishlist"><i class="icon-heart"></i></a></li>
+                                    <li><a href="javascript:void(0);" data-tooltip="tooltip" data-placement="top" title="Compare" class="compare"><i class="icon-sliders"></i></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="single-product product-list">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="/images/index.jpeg" alt="" height="232px">
+                                </a>
+
+                                <div class="action-links">
+                                    <ul>
+                                        <!-- <li><a href="javascript:void(0);" data-tooltip="tooltip" data-placement="left" title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-eye"></i></a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <!--<ul class="rating">-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--</ul>-->
+                                <h4 class="product-name"><a href="#">Shaxand sihatgoxi</a></h4>
+                                <div class="price-box">
+                                    <!-- <span class="current-price">$79.00</span> -->
+                                </div>
+                                <p>Shaxand – Namanganning go‘zal tabiatli, musaffo havoli, ekoturizm uchun qulay hududi. Bu yerda Siz hordiq chiqarish bilan birga betakror tabiat manzaralaridan zavq olasiz. Sihatgohda mijozlarga yuqori sifatli xizmat ko‘rsatish uchun barcha qulayliklar mavjud. Keng va yorug‘ xonalar eng so‘nggi zamonaviy tibbiyot uskunalari bilan ta&#x27;minlangan.</p>
+
+                                <ul class="action-links">
+                                    
+                                      
+                                 
+                                    <li><a href="/form/4.html" class="add-cart"  title="Ariza topshirish"> Ariza topshirish &nbsp; <i class="fa fa-arrow-right"></i> </a></li>
+                                    <!-- <li><a href="javascript:void(0);" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist" class="wishlist"><i class="icon-heart"></i></a></li>
+                                    <li><a href="javascript:void(0);" data-tooltip="tooltip" data-placement="top" title="Compare" class="compare"><i class="icon-sliders"></i></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="single-product product-list">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="/images/maxresdefault.jpg" alt="" height="232px">
+                                </a>
+
+                                <div class="action-links">
+                                    <ul>
+                                        <!-- <li><a href="javascript:void(0);" data-tooltip="tooltip" data-placement="left" title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-eye"></i></a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <!--<ul class="rating">-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--</ul>-->
+                                <h4 class="product-name"><a href="#">Nurobod sixatgoxi</a></h4>
+                                <div class="price-box">
+                                    <!-- <span class="current-price">$79.00</span> -->
+                                </div>
+                                <p>Nurobod – Farg&#x27;onaning go‘zal tabiatli, musaffo havoli, ekoturizm uchun qulay hududi. Bu yerda Siz hordiq chiqarish bilan birga betakror tabiat manzaralaridan zavq olasiz. Sihatgohda mijozlarga yuqori sifatli xizmat ko‘rsatish uchun barcha qulayliklar mavjud. Keng va yorug‘ xonalar eng so‘nggi zamonaviy tibbiyot uskunalari bilan ta&#x27;minlangan.</p>
+
+                                <ul class="action-links">
+                                    
+                                      
+                                 
+                                    <li><a href="/form/3.html" class="add-cart"  title="Ariza topshirish"> Ariza topshirish &nbsp; <i class="fa fa-arrow-right"></i> </a></li>
+                                    <!-- <li><a href="javascript:void(0);" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist" class="wishlist"><i class="icon-heart"></i></a></li>
+                                    <li><a href="javascript:void(0);" data-tooltip="tooltip" data-placement="top" title="Compare" class="compare"><i class="icon-sliders"></i></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="single-product product-list">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="/images/s.jpg" alt="" height="232px">
+                                </a>
+
+                                <div class="action-links">
+                                    <ul>
+                                        <!-- <li><a href="javascript:void(0);" data-tooltip="tooltip" data-placement="left" title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-eye"></i></a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <!--<ul class="rating">-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--</ul>-->
+                                <h4 class="product-name"><a href="#">Chortoqsoy sixatgohi</a></h4>
+                                <div class="price-box">
+                                    <!-- <span class="current-price">$79.00</span> -->
+                                </div>
+                                <p>Chortoqsoy – Namanganning go‘zal tabiatli, musaffo havoli, ekoturizm uchun qulay hududi. Bu yerda Siz hordiq chiqarish bilan birga betakror tabiat manzaralaridan zavq olasiz. Sihatgohda mijozlarga yuqori sifatli xizmat ko‘rsatish uchun barcha qulayliklar mavjud. Keng va yorug‘ xonalar eng so‘nggi zamonaviy tibbiyot uskunalari bilan ta&#x27;minlangan.</p>
+
+                                <ul class="action-links">
+                                    
+                                      
+                                 
+                                    <li><a href="/form/2.html" class="add-cart"  title="Ariza topshirish"> Ariza topshirish &nbsp; <i class="fa fa-arrow-right"></i> </a></li>
+                                    <!-- <li><a href="javascript:void(0);" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist" class="wishlist"><i class="icon-heart"></i></a></li>
+                                    <li><a href="javascript:void(0);" data-tooltip="tooltip" data-placement="top" title="Compare" class="compare"><i class="icon-sliders"></i></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="single-product product-list">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="/images/unnamed.jpg" alt="" height="232px">
+                                </a>
+
+                                <div class="action-links">
+                                    <ul>
+                                        <!-- <li><a href="javascript:void(0);" data-tooltip="tooltip" data-placement="left" title="Quick View" data-toggle="modal" data-target="#exampleModal"><i class="icon-eye"></i></a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <!--<ul class="rating">-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--    <li class="rating-on"><i class="fa fa-star-o"></i></li>-->
+                                <!--</ul>-->
+                                <h4 class="product-name"><a href="#">Xonobod sixatgohi</a></h4>
+                                <div class="price-box">
+                                    <!-- <span class="current-price">$79.00</span> -->
+                                </div>
+                                <p>Xonobod – vodiyning go‘zal tabiatli, musaffo havoli, ekoturizm uchun qulay hududi. Bu yerda Siz hordiq chiqarish bilan birga betakror tabiat manzaralaridan zavq olasiz. Sihatgohda mijozlarga yuqori sifatli xizmat ko‘rsatish uchun barcha qulayliklar mavjud. Keng va yorug‘ xonalar eng so‘nggi zamonaviy tibbiyot uskunalari bilan ta&#x27;minlangan.</p>
+
+                                <ul class="action-links">
+                                    
+                                      
+                                 
+                                    <li><a href="/form/1.html" class="add-cart"  title="Ariza topshirish"> Ariza topshirish &nbsp; <i class="fa fa-arrow-right"></i> </a></li>
+                                    <!-- <li><a href="javascript:void(0);" data-tooltip="tooltip" data-placement="top" title="Add to Wishlist" class="wishlist"><i class="icon-heart"></i></a></li>
+                                    <li><a href="javascript:void(0);" data-tooltip="tooltip" data-placement="top" title="Compare" class="compare"><i class="icon-sliders"></i></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        
+                       
+                      
+
+                <!--Pagination Start-->
+                    
+                <!--Pagination End-->
+
+
+                        <script>
+                            function SortObl(val){
+                                if(val){
+                                    document.getElementById('ok').click();
+                                }
+                            }
+                        </script>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+</div>
+</div>
+</div>
+
+     <!-- Modal -->
+     <div class="modal-wrapper">
+        <div class="modal" id="mod">
+          
+          <div class="head">
+            <a class="btn-close  trigger" id="model_btn" href="#">
+              <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+            </a>
+
+          </div>
+          <div class="content">
+            <div class="center">
+                <h4> <i class="text-info" id="sanatory_name"> Chortoqsoy</i>  ga navbatga yozilish uchun ariza berish</h4>
+            </div>
+            <div class="account-details">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="single-form">
+                            <input type="text" placeholder="Ism">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="single-form">
+                            <input type="text" placeholder="Familya">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="single-form">
+                            <input type="text" placeholder="Otasining ismi">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="single-form">
+                            <input type="text" placeholder="Passport seriyasi">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="single-form">
+                            <h5 class="title">Kim tomonidan berilgan (IIb)</h5>
+                            <select class="" name="SortBy" id="" style="width: 100%;">
+                                <option selected>--- -- ---</option>
+                                
+                                <option value="Asaka tumani IIB">Asaka tumani IIB</option>
+                                
+                                <option value="Andijon tumani IIB">Andijon tumani IIB</option>
+                                
+                                <option value="Buloqboshi tumani IIB">Buloqboshi tumani IIB</option>
+                                
+                                <option value="Izboskan tumani IIB">Izboskan tumani IIB</option>
+                                
+                                <option value="Shahrixon tumani IIB">Shahrixon tumani IIB</option>
+                                
+                                <option value="Qo&#x27;rg&#x27;ontepa tumani IIB">Qo&#x27;rg&#x27;ontepa tumani IIB</option>
+                                
+                                <option value="Paxtobod tumani IIB">Paxtobod tumani IIB</option>
+                                
+                                <option value="Baliqchi tumani IIB">Baliqchi tumani IIB</option>
+                                
+                                <option value="Ulug&#x27;nor tumani IIB">Ulug&#x27;nor tumani IIB</option>
+                                
+                                <option value="Xo&#x27;jobod tumani IIB">Xo&#x27;jobod tumani IIB</option>
+                                
+                                <option value="Jalaquduq tumani IIB">Jalaquduq tumani IIB</option>
+                                
+                                <option value="Oltinko&#x27;l tumani IIB">Oltinko&#x27;l tumani IIB</option>
+                                
+                                <option value="Marhamat tumani IIB">Marhamat tumani IIB</option>
+                                
+                                <option value="Bo&#x27;ston tumani IIB">Bo&#x27;ston tumani IIB</option>
+                                
+                                <option value="Andijon shahar IIB">Andijon shahar IIB</option>
+                                
+                                <option value="Xonobod shahar IIB">Xonobod shahar IIB</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="single-form">
+                            <h4>Pensiya guvoxnomasi raqami yoki pensionerlik xaqidagi ma'lumotnoma raqami</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="single-form">
+                            <input type="number" placeholder="Pensionerlik xaqida guvoxnoma yoki ma'lumotnoma raqami">
+                        </div>
+                    </div>
+                    <input type="hidden" name="sanatory_id" value="" id="sanatory_id">
+
+                    <!-- <div class="col-md-6">
+                        <div class="single-form">
+                            <input type="text" placeholder="Amal qilish muddati">
+                        </div>
+                    </div> -->
+                    <div class="col-md-12">
+                        <div class="single-form">
+                            <h4>Yashash manzilingiz</h4>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-md-12">
+                        <div class="single-form">
+                            <h5 class="title">Tuman</h5>
+                            <select class="" name="SortBy" id="" style="width: 100%;">
+                                <option selected>--- -- ---</option>
+                                
+                                <option value="">Asaka tumani</option>
+                                
+                                <option value="">Andijon tumani</option>
+                                
+                                <option value="">Buloqboshi tumani</option>
+                                
+                                <option value="">Izboskan tumani</option>
+                                
+                                <option value="">Shahrixon tumani</option>
+                                
+                                <option value="">Qo&#x27;rg&#x27;ontepa tumani</option>
+                                
+                                <option value="">Paxtobod tumani</option>
+                                
+                                <option value="">Baliqchi tumani</option>
+                                
+                                <option value="">Ulug&#x27;nor tumani</option>
+                                
+                                <option value="">Xo&#x27;jobod tumani</option>
+                                
+                                <option value="">Jalaquduq tumani</option>
+                                
+                                <option value="">Oltinko&#x27;l tumani</option>
+                                
+                                <option value="">Marhamat tumani</option>
+                                
+                                <option value="">Bo&#x27;ston tumani</option>
+                                
+                                <option value="">Andijon shahar tumani</option>
+                                
+                                <option value="">Xonobod shahar tumani</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="single-form">
+                            <input type="text" placeholder="Uy manzilingiz">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="single-form">
+                            <button class="btn btn-primary">Arizani jo'natish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+          function ModalControl(s_id,s_title){
+            
+            document.getElementById('sanatory_id').value = s_id;
+            
+            document.getElementById('sanatory_name').innerHTML = s_title;
+          }
+      </script>
+
+
+
+
+    
+
+
+         <!--Footer Section Start-->
+        <div class="footer-area" style="margin-top:50px;">
+            <div class="container">
+                <div class="footer-widget-area section-padding-6">
+                    <div class="row justify-content-between">
+
+                        <!--Footer Widget Start-->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-widget">
+                                <a class="footer-logo" href="#"><img src="/images/logotip.svg" alt="no image"></a>
+                                <div class="footer-widget-text">
+                                    <p> Andijon  viloyati Tibbiy-ijtimoiy xizmatlarni rivojlantrish boshqarmasi</p>
+                                </div>
+                                <div class="widget-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--Footer Widget End-->
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="footer-widget">
+                                <h4 class="footer-widget-title"><a href="/category.html">Protez buyumlari</a></h4>
+
+                                <div class="footer-widget-menu">
+                                    <ul>
+                                    
+                                        <li><a href="/product/4.html">Toʼliq oyoq uchun apparat</a></li>
+                                      
+                                        <li><a href="/product/3.html">Qoʼltiq hassa</a></li>
+                                      
+                                        <li><a href="/product/2.html">Yelka oldi protezi</a></li>
+                                      
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="footer-widget">
+                                <h4 class="footer-widget-title"><a href="/sanatory.html">Sihatgoxlar ro'yxati</a></h4>
+
+                                <div class="footer-widget-menu">
+                                    <ul>
+                                  
+                                        <li><a href="/form/5.html">Tovoqsoy sihatgoxi</a></li>
+                                    
+                                        <li><a href="/form/4.html">Shaxand sihatgoxi</a></li>
+                                    
+                                        <li><a href="/form/3.html">Nurobod sixatgoxi</a></li>
+                                        
+                                        <li><a href="/form/2.html">Chortoqsoy sixatgohi</a></li>
+                                    
+                                        <li><a href="/form/1.html">Xonobod sixatgohi</a></li>
+                                    
+
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="footer-widget">
+                                <h4 class="footer-widget-title">Ma'lumot</h4>
+
+                                <div class="footer-widget-menu">
+                                    <ul>
+                                        <li><a href="/about.html">Tashkilot xaqida</a></li>
+                                        <li><a href="/contact.html">Aloqa</a></li>
+                                        <li><a href="/news.html">Yangiliklar</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer Section End-->
+
+        <!--Copyright Section Start-->
+        <div class="copyright-section">
+            <div class="container">
+                <div class="copyright-wrapper text-center d-lg-flex align-items-center justify-content-between">
+
+                    <!--Right Start-->
+                    <div class="copyright-content">
+                        <p>Copyright 2021 &copy; <a href="https://robocode.uz/">Robocode</a> . All Rights Reserved</p>
+                    </div>
+                    <!--Right End-->
+
+                    <!--Right Start-->
+                    <div class="copyright-payment">
+                        <img src="assets/images/payment.png" alt="">
+                    </div>
+                    <!--Right End-->
+
+                </div>
+            </div>
+        </div>
+        <!--Copyright Section End-->
+
+
+        <!--Back To Start-->
+        <a href="#" class="back-to-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!--Back To End-->
+
+    </div>
+ 
+
+    <!-- Modernizer JS -->
+    <script src="/js/modernizr-3.6.0.min.js"></script>
+    <!-- jQuery JS -->
+ 
+    <!-- Bootstrap JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/jquery.countdown.min.js"></script>
+    <script src="/js/jquery.elevateZoom.min.js"></script>
+    <script src="/js/select2.min.js"></script>
+    <script src="/js/ajax-contact.js"></script>
+
+
+    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+    <!-- <script src="assets/js/plugins.min.js"></script> -->
+
+    <!-- Main JS -->
+    <script src="/js/main.js"></script>
+
+
+    <!-- Google Map js -->
+    
+    <script src="/js/map-script.js"></script>
+
+
+
+      
+</body>
+
+</html> 

@@ -1,0 +1,845 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Andijon  viloyati Tibbiy-ijtimoiy xizmatlarni rivojlantrish boshqarmasi </title>
+    <meta name="robots" content="index" />
+    <meta name="description" content="Andijon  viloyati Tibbiy-ijtimoiy xizmatlarni rivojlantrish boshqarmasi,andijon tibbiyot,
+        protez buyumlarga ariza,sihatgixlarga ariza topshirish">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/static/assets/images/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="/css/plazaicon.css">
+    <link rel="stylesheet" href="/css/themify-icons.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/select2.min.css">
+
+    <!-- Helper CSS -->
+    <link rel="stylesheet" href="/css/helper.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+   <script src="/js/jquery-3.3.1.min.js"></script>
+    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+    <!-- <link rel="stylesheet" href="assets/css/plugins-min/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css"> -->
+
+<!--Shop End-->
+
+
+
+
+<script>
+    // function ShowForm(){
+    //     var filter = document.getElementById('filter');
+    //     var tab = document.getElementById('myTabContent');
+    //     var order = document.getElementById('order');
+
+    //     filter.style = " display:none;";
+    //     tab.className = "show";
+    //     order.style = "  opacity: 1;transition: opacity 0.4s ease-out, display 0.4s step-start; display:block;";
+    // }
+
+    $( document ).ready(function() {
+  $('.trigger').on('click', function() {
+     $('.modal-wrapper').toggleClass('open');
+    $('.page-wrapper').toggleClass('blur-it');
+     return false;
+  });
+});
+
+const screenWidth = window.screen.width
+const screenHeight = window.screen.height
+
+$(document).ready(function(){
+    
+
+if(screenWidth < 580){
+    var scr = screenWidth - 10
+
+    $('#mod').css({"width": String(scr)});
+}
+})
+</script>
+
+<style>
+
+
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  background: url(https://goo.gl/OeVhun) center no-repeat;
+  background-size: cover;
+}
+
+.blur-it {
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+#model_btn.btn {
+  width: 200px;
+  padding: 18px 0;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0;
+  background: #e2525c;
+}
+
+.page-banner {
+    width: 94%;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 1px rgb(0 0 0 / 30%);
+  padding-top: 25px;
+  padding-bottom: 5px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background: rgba(146, 153, 153, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  overflow: auto;
+  z-index:999;
+}
+
+.modal-wrapper.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  width: 900px;
+  height: 700px;
+  display: block;
+  margin: 50% 0 0 -300px;
+  position: relative;
+  top: 25%; 
+  left: 50%;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+/* margin:50% 7px 0px -150px; */
+
+.modal-wrapper.open .modal {
+  margin-top: -200px;
+  opacity: 1;
+}
+
+.head { 
+  width: 100%;
+  height: 52px;
+  padding: 5px 10px;
+  overflow: hidden;
+  background: #e2525c;
+}
+
+.btn-close {
+  font-size: 28px;
+  display: block;
+  float: right;
+  color: #fff;
+}
+
+.content {
+  padding: 2%;
+}
+
+
+
+
+@media screen and (max-width: 578px) {
+
+.modal {
+    /* width: 350px; */
+height: 860px;
+display: block;
+margin: 50% 0px 5px 0px;
+position: relative;
+top: 35%; 
+left: 1%;
+right: 1%;
+background: #fff;
+opacity: 0;
+-webkit-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+overflow: hidden;
+scroll-behavior: auto;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <!--Header Section Start-->
+        <div class="header-section d-none d-lg-block">
+            <div class="main-header">
+                <div class="container position-relative">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2">
+                            <div class="header-logo">
+                                <a href="/index.html">
+                                <img src="/images/logotip.svg" class="logo"  alt=""></a>
+                            </div>
+                        </div>
+                        <style>
+                            .logo{
+                                display: flex;
+                                position: absolute;
+                                top: -50%;
+                                /* margin: 0px 0px -15px 0px; */
+                                width: 110px;
+                                height: auto;
+                                z-index: 1;
+                            }
+                        </style>
+                        <div class="col-lg-7 position-static">
+                            <div class="site-main-nav">
+                                <nav class="site-nav">
+                                    <ul>
+                                        <li><a href="/index.html">Bosh sahifa</a></li>
+                                        <li>
+                                            <a href="/sanatory.html">Sihatgoxlar</a>
+                                        </li>
+                                        <li>
+                                            <a href="/about.html">Biz haqimizda</a>
+
+
+                                        </li>
+                                     
+                                        <li>
+                                            <a href="/news.html">Yangiliklar</a>
+                                        
+                                        </li>
+                                        <li><a href="/contact.html">Aloqa</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="header-meta-info">
+                                <div class="header-search">
+                                 
+                                </div>
+                                <div class="header-account">
+                                    <div class="header-account-list dropdown top-link">
+                                        <!-- <a href="#" role="button" data-toggle="dropdown"><i class="icon-users"></i></a> -->
+
+                                        <ul class="dropdown-menu ">
+                                            <li><a href="#">Delivery</a></li>
+                                            <li><a href="#">Legal Notice</a></li>
+                                            <li><a href="#">Secure payment</a></li>
+                                            <li><a href="#">Sitemap</a></li>
+                                            <li><a href="#">About us</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-account-list dropdown mini-cart">
+                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Header Section End-->
+
+
+        <!--Header Mobile Start-->
+        <div class="header-mobile d-lg-none">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <div class="header-logo">
+                            <a href="/"><img src="/images/logotip.svg" width="50" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="header-meta-info">
+                            <div class="header-account">
+                                <div class="header-account-list dropdown top-link">
+                                    <!-- <a href="#" role="button" data-toggle="dropdown"><i class="icon-users"></i></a> -->
+
+                                    <ul class="dropdown-menu ">
+                                        <li><a href="#">Delivery</a></li>
+                                        <li><a href="#">Legal Notice</a></li>
+                                        <li><a href="#">Secure payment</a></li>
+                                        <li><a href="#">Sitemap</a></li>
+                                        <li><a href="#">About us</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-account-list mini-cart">
+                                
+                                </div>
+                                <div class="header-account-list mobile-menu-trigger">
+                                    <button id="menu-trigger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Header Mobile End-->
+
+        <!--Header Mobile Menu Start-->
+        <div class="header-mobile-menu d-lg-none">
+
+            <a href="javascript:void(0)" class="mobile-menu-close">
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="header-meta-info">
+                <div class="header-search">
+    
+                </div>
+            </div>
+
+            <div class="site-main-nav">
+                <nav class="site-nav">
+                    <ul class="navbar-mobile-wrapper">
+                        <li><a href="/index.html">Bosh sahifa</a></li>
+                        <li>
+                            <a href="/about.html">Biz haqimizda </a>
+
+                           
+                        </li>
+                        <li>
+                            <a href="/category.html">Protez-Ortopediya</a>
+
+                     
+                        </li>
+                             <li><a href="/sanatory.html">Sihatgoxlar</a></li>
+                        <li>
+                            <a href="/news.html">Yangiliklar </a>
+                         
+                        </li>
+                        <li><a href="/contact.html">Aloqa</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-social">
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                 
+                    <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!--Header Mobile Menu End-->
+
+        <div class="overlay"></div>
+        <!--Overlay-->
+
+
+
+
+
+     
+        <div class="overlay"></div>
+        <!--Overlay-->
+
+        <!--Page Banner Start-->
+        <div class="page-banner"  style="background-image:url(/images/banner-2.jpeg); height:200px;">
+            <div class="container">
+                <div class="page-banner-content text-center">
+                    <h2 class="title">Keng ko‘lamli loyiha ishga tushirildi</h2>
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="/index.html">Bosh sahifa</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Keng ko‘lamli loyiha ishga tushirildi</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!--Page Banner End-->
+
+        <!--Blog Start-->
+        <div class="blog-page section-padding-7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="blog-single">
+                            <img src="/images/der2 (1).jpeg" width="340" height="420" alt="">
+
+                            <h2 class="title">Keng ko‘lamli loyiha ishga tushirildi</h2>
+                            <div class="articles-date">
+                                <p>  <span>14-Iyul, 2021-yil</span></p>
+                            </div>
+
+                            <p>O’zbekiston Respublikasi Prezidentining farmonlariga muvofiq. &quot;Sog‘lom turmush tarzini keng joriy etish va ommaviy sportni yanada rivojlantirish chora-tadbirlari to‘g‘risida &quot;va&quot; aholining sog‘lom ovqatlanishini ta’minlash bo‘yicha qo‘shimcha chora - tadbirlar to‘g‘risida &quot; RIIAETM shahar Sog‘liqni saqlash boshqarmasi va Sanofi farmatsevtika kompaniyasi bilan birgalikda keng ko‘lamli loyihani-Endokrinologiya tibbiyot markazining yuqori malakali vrachlari ishtirokida o‘z-o‘zini nazorat qilish va to‘g‘ri ovqatlanish maktabini ishga tushirdi.
+
+                                Loyihani yo‘lga qo‘yishdan maqsad aholining sog‘lom turmush tarzining ajralmas tarkibiy qismi sifatida to‘g‘ri ovqatlanish asoslari, shuningdek, semizlik va qandli diabetning oldini olish asoslari haqidagi tushunchalarini shakllantirishdan iborat.
+
+                                Tadbirlar ommaviy axborot vositalarida va Markaz portalida keng yoritiladi</p>
+
+<!--                             <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt labo dolor magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
+                            </blockquote> -->
+<!-- 
+                            <div class="dec-img-wrapper">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="dec-img">
+                                            <img src="/static/assets/images/blog-single/blog-dec-img1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="dec-img">
+                                            <img src="/static/assets/images/blog-single/blog-dec-img2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
+<!-- 
+                            <div class="blog-dec-tags-social">
+                                <div class="blog-dec-tags">
+                                    <span>Tags:</span>
+                                    <ul class="tags">
+                                        <li><a href="#">Bouquet</a></li>
+                                        <li><a href="#">Event</a></li>
+                                        <li><a href="#">Gift</a></li>
+                                        <li><a href="#">Joy</a></li>
+                                    </ul>
+                                </div>
+                                <div class="blog-dec-social">
+                                    <span>Share:</span>
+                                    <ul class="social">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+ -->
+<!--                             <div class="blog-next-previous">
+                                <span class="left">
+                                <a href="#"><i class="ti-arrow-left"></i> Older Post </a>
+                            </span>
+                                <span class="right">
+                                <a href="#">Newer Post  <i class="ti-arrow-right"></i></a>
+                            </span>
+                            </div> -->
+                        </div>
+<!-- 
+                        <div class="blog-comment">
+                            <div class="comment-wrapper section-padding-2">
+                                <h2 class="comment-title">Comment (03) </h2>
+
+                                <ul class="comment-items">
+                                    <li>
+                                        <div class="single-commnet">
+                                            <div class="comment-avater">
+                                                <img src="/static/assets/images/avater-1.png" alt="">
+                                            </div>
+                                            <div class="comment-content">
+                                                <h4 class="avater-name">Anthony Stephens</h4>
+                                                <span class="date">October 14, 2020</span>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim veniam,</p>
+                                                <a href="#" class="replay">Replay</a>
+                                            </div>
+                                        </div>
+
+                                        <ul class="comment-replay">
+                                            <li>
+                                                <div class="single-commnet">
+                                                    <div class="comment-avater">
+                                                        <img src="/static/assets/images/avater-2.png" alt="">
+                                                    </div>
+                                                    <div class="comment-content">
+                                                        <h4 class="avater-name">Anthony Stephens</h4>
+                                                        <span class="date">October 14, 2020</span>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim veniam,</p>
+                                                        <a href="#" class="replay">Replay</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="single-commnet">
+                                            <div class="comment-avater">
+                                                <img src="/static/assets/images/avater-1.png" alt="">
+                                            </div>
+                                            <div class="comment-content">
+                                                <h4 class="avater-name">Anthony Stephens</h4>
+                                                <span class="date">October 14, 2020</span>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim veniam,</p>
+                                                <a href="#" class="replay">Replay</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="comment-wrapper section-padding-2">
+                                <h2 class="comment-title">Leave a comment</h2>
+
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="single-form">
+                                                <input type="text" placeholder="Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-form">
+                                                <input type="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="single-form">
+                                                <textarea placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="single-form">
+                                                <button class="btn btn-primary">Send Message</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="blog-sidebar">
+
+                            <!--Sidebar Tags Start-->
+           <!--                  <div class="sidebar-search">
+                                <h3 class="widget-title">Search</h3>
+
+                                <div class="search-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Search">
+                                        <button><i class="fa fa-search"></i></button>
+                                    </form>
+                                </div>
+                            </div> -->
+                            <!--Sidebar Tags End-->
+
+
+
+
+                             <div class="sidebar-categories">
+
+
+                            <!--Sidebar Categories Start-->
+                            <div class="sidebar-categories">
+                                <h3 class="widget-title">So'nggi yangiliklar </h3>
+
+
+                                <ul class="categories-list">
+                                    
+                                    
+                                    <li><a href="/detail/farmatsevtika-sanoatidagi-korruptsiyaga-qarshi-kurash.html">Farmatsevtika sanoatidagi korruptsiyaga qarshi kurash</a></li>
+                                        
+                                    
+                                    <li><a href="/detail/keng-kolamli-loyiha-ishga-tushirildi.html">Keng ko‘lamli loyiha ishga tushirildi</a></li>
+                                        
+                                    
+                                    <li><a href="/detail/akademik-yaxtoraqulov-nomidagi-riiaetm-bemorlarini-qabul-qilish-tartibi.html">Akademik Ya.X.To‘raqulov nomidagi RIIAETM bemorlarini qabul qilish tartibi</a></li>
+                                        
+                                    
+                                        
+                                   
+                                </ul>
+                            </div>
+                            <!--Sidebar Categories End-->
+
+
+                            <!--Sidebar Categories Start-->
+<!--                             <div class="sidebar-categories">
+                                <h3 class="widget-title">Blog Archives</h3>
+
+                                <ul class="categories-list">
+                                    <li><a href="#">January <span>(10)</span></a></li>
+                                    <li><a href="#">February <span>(08)</span></a></li>
+                                    <li><a href="#">March <span>(07)</span></a></li>
+                                    <li><a href="#">April <span>(14)</span></a></li>
+                                    <li><a href="#">May <span>(10)</span></a></li>
+                                </ul>
+                            </div> -->
+                            <!--Sidebar Categories End-->
+
+
+                            <!--Sidebar Categories Start-->
+<!--                             <div class="sidebar-post">
+                                <h3 class="widget-title">Recent Post</h3>
+
+                                <ul class="post-items">
+                                    <li>
+                                        <div class="single-post">
+                                            <div class="post-thumb">
+                                                <a href="blog-single-right-sidebar.html"><img src="/static/assets/images/blog/blog-07.jpg" alt=""></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <span class="date">Aug 12, 2020</span>
+                                                <h4 class="post-title"><a href="blog-single-right-sidebar.html">Flower Beauty</a></h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="single-post">
+                                            <div class="post-thumb">
+                                                <a href="blog-single-right-sidebar.html"><img src="/static/assets/images/blog/blog-08.jpg" alt=""></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <span class="date">Aug 12, 2020</span>
+                                                <h4 class="post-title"><a href="blog-single-right-sidebar.html">Flower Beauty</a></h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="single-post">
+                                            <div class="post-thumb">
+                                                <a href="blog-single-right-sidebar.html"><img src="/static/assets/images/blog/blog-10.jpg" alt=""></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <span class="date">Aug 12, 2020</span>
+                                                <h4 class="post-title"><a href="blog-single-right-sidebar.html">Flower Beauty</a></h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div> -->
+                            <!--Sidebar Categories End-->
+
+
+                            <!--Sidebar Tags Start-->
+<!--                             <div class="sidebar-tags">
+                                <h3 class="widget-title">Tags</h3>
+
+                                <ul class="tags-list">
+                                    <li><a href="#">Bouquet</a></li>
+                                    <li><a href="#">Event</a></li>
+                                    <li><a href="#">Gift</a></li>
+                                    <li><a href="#">Joy</a></li>
+                                    <li><a href="#">Love</a></li>
+                                    <li><a href="#">Special</a></li>
+                                    <li><a href="#">Success</a></li>
+                                    <li><a href="#">Festival</a></li>
+                                </ul>
+                            </div> -->
+                            <!--Sidebar Tags End-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Blog End-->
+
+    
+
+
+         <!--Footer Section Start-->
+        <div class="footer-area" style="margin-top:50px;">
+            <div class="container">
+                <div class="footer-widget-area section-padding-6">
+                    <div class="row justify-content-between">
+
+                        <!--Footer Widget Start-->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-widget">
+                                <a class="footer-logo" href="/index.html"><img src="/images/logotip.svg" alt="no image"></a>
+                                <div class="footer-widget-text">
+                                    <p> Andijon  viloyati Tibbiy-ijtimoiy xizmatlarni rivojlantrish boshqarmasi</p>
+                                </div>
+                                <div class="widget-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--Footer Widget End-->
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="footer-widget">
+                                <h4 class="footer-widget-title"><a href="/category.html">Protez buyumlari</a></h4>
+
+                                <div class="footer-widget-menu">
+                                    <ul>
+                                    
+                                        <li><a href="/product/4.html">Toʼliq oyoq uchun apparat</a></li>
+                                      
+                                        <li><a href="/product/3.html">Qoʼltiq hassa</a></li>
+                                      
+                                        <li><a href="/product/2.html">Yelka oldi protezi</a></li>
+                                      
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="footer-widget">
+                                <h4 class="footer-widget-title"><a href="/sanatory.html">Sihatgoxlar ro'yxati</a></h4>
+
+                                <div class="footer-widget-menu">
+                                    <ul>
+                                  
+                                        <li><a href="/form/5.html">Tovoqsoy sihatgoxi</a></li>
+                                    
+                                        <li><a href="/form/4.html">Shaxand sihatgoxi</a></li>
+                                    
+                                        <li><a href="/form/3.html">Nurobod sixatgoxi</a></li>
+                                    
+                                        <li><a href="/form/2.html">Chortoqsoy sixatgohi</a></li>
+                                    
+                                        <li><a href="/form/1.html">Xonobod sixatgohi</a></li>
+                                    
+
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="footer-widget">
+                                <h4 class="footer-widget-title">Ma'lumot</h4>
+
+                                <div class="footer-widget-menu">
+                                    <ul>
+                                        <li><a href="/about.html">Tashkilot xaqida</a></li>
+                                        <li><a href="/contact.html">Aloqa</a></li>
+                                        <li><a href="/news.html">Yangiliklar</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer Section End-->
+
+        <!--Copyright Section Start-->
+        <div class="copyright-section">
+            <div class="container">
+                <div class="copyright-wrapper text-center d-lg-flex align-items-center justify-content-between">
+
+                    <!--Right Start-->
+                    <div class="copyright-content">
+                        <p>Copyright 2021 &copy; <a href="https://robocode.uz/">Robocode</a> . All Rights Reserved</p>
+                    </div>
+                    <!--Right End-->
+
+                    <!--Right Start-->
+                    <div class="copyright-payment">
+                        <img src="/images/payment.png" alt="">
+                    </div>
+                    <!--Right End-->
+
+                </div>
+            </div>
+        </div>
+        <!--Copyright Section End-->
+
+
+        <!--Back To Start-->
+        <a href="#" class="back-to-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!--Back To End-->
+
+    </div>
+ 
+
+    <!-- Modernizer JS -->
+    <script src="/js/modernizr-3.6.0.min.js"></script>
+    <!-- jQuery JS -->
+ 
+    <!-- Bootstrap JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/jquery.countdown.min.js"></script>
+    <script src="/js/jquery.elevateZoom.min.js"></script>
+    <script src="/js/select2.min.js"></script>
+    <script src="/js/ajax-contact.js"></script>
+
+
+    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+    <!-- <script src="assets/js/plugins.min.js"></script> -->
+
+    <!-- Main JS -->
+    <script src="/js/main.js"></script>
+
+
+    <!-- Google Map js -->
+    
+    <script src="/js/map-script.js"></script>
+
+
+
+      
+</body>
+
+</html> 

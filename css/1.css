@@ -1,0 +1,120 @@
+.page-wrapper {
+    width: 100%;
+    height: 100%;
+    background: url(https://goo.gl/OeVhun) center no-repeat;
+    background-size: cover;
+  }
+  
+  .blur-it {
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+  
+  #model_btn.btn {
+    width: 200px;
+    padding: 18px 0;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 0;
+    background: #e2525c;
+  }
+  
+  .page-banner {
+    padding-top: 25px;
+    padding-bottom: 5px;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .modal-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    background: rgba(146, 153, 153, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    overflow: auto;
+    z-index:999;
+  }
+  
+  .modal-wrapper.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .modal {
+    width: 900px;
+    height: 700px;
+    display: block;
+    margin: 50% 0 0 -300px;
+    position: relative;
+    top: 25%; 
+    left: 50%;
+    background: #fff;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    z-index: 99999;
+  }
+  
+  /* margin:50% 7px 0px -150px; */
+  
+  .modal-wrapper.open .modal {
+    margin-top: -200px;
+    opacity: 1;
+  }
+  
+  .head { 
+    width: 100%;
+    height: 52px;
+    padding: 5px 10px;
+    overflow: hidden;
+    background: #e2525c;
+  }
+  
+  .btn-close {
+    font-size: 28px;
+    display: block;
+    float: right;
+    color: #fff;
+  }
+  
+  .content {
+    padding: 2%;
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 578px) {
+  
+  .modal {
+      /* width: 350px; */
+  height: 860px;
+  display: block;
+  margin: 50% 0px 5px 0px;
+  position: relative;
+  top: 35%; 
+  left: 1%;
+  right: 1%;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  scroll-behavior: auto;
+  }
+  }
